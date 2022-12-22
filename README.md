@@ -20,8 +20,7 @@ This project focuses on WallStreetBets (responsible for the GME short-squeeze li
 * pmaw (Pushshift Multithread API Wrapper)
 * sklearn
 * joblib==1.1.0 (needed because of conflicts with BERTopic)
-
-	pip install --upgrage joblib==1.1.0
+```pip install --upgrage joblib==1.1.0```
 
 # Data Source
 
