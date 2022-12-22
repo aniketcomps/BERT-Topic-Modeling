@@ -1,8 +1,6 @@
 # Topic Modeling
 
-	A topic model is a type of statistical model for discovering abstract "topics" that occur in a collection of documents
-	Useful to get a general summary of topics being discussed in the data
-	Advanced topic models like BERTopic also provide association between these topics
+A topic model is a type of statistical model for discovering abstract "topics" that occur in a collection of documents. It provides a general summary of topics being discussed in the data and association between those topics.
 
 # Project Motivation
 
