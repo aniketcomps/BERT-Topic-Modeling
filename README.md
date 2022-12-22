@@ -53,9 +53,9 @@ This project focuses on WallStreetBets (responsible for the GME short-squeeze li
 
 ![image](images/intertopic_distance_map.jpg)
 
-Queen of England's death is associated closely with topics related to inflation (center cluster of topic).
+Queen of England's death is associated closely with topics related to inflation (cluster of topics at center).
 
 # Future scope
 
-	Use an embedding-based sentiment analyzer (e.g., "Flair"), instead of heuristic-based technique like VADER. We stopped at VADER since it was giving good results (8 out of 10 recommended stocks were in profit)
-	Create a multi-processing scraper using joblib for faster scraping
+* Use an embedding-based sentiment analyzer (e.g., "Flair"), instead of heuristic-based technique like VADER. We stopped at VADER since it was giving good results (8 out of 10 recommended stocks were in profit)
+* Create a multi-processing scraper using joblib for faster scraping
