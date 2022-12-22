@@ -20,32 +20,33 @@ This project focuses on WallStreetBets (responsible for the GME short-squeeze li
 * pmaw (Pushshift Multithread API Wrapper)
 * sklearn
 * joblib==1.1.0 (needed because of conflicts with BERTopic)
+	pip install --upgrage joblib==1.1.0
 
 # Data Source
 
 ### For Topic Modelling
-	Scraped ~500k comments & posts from the subreddit r/Wallstreetbets
-	Date range: Sept 1, 2022 to Sept 30, 2022
+* Scraped ~500k comments & posts from the subreddit r/Wallstreetbets
+* Date range: Sept 1, 2022 to Sept 30, 2022
 ### For Sentiment Analysis
-	Scrape data to get top stock tickers from Sept 1, 2022 to Sept 30, 2022
-	Scrape data for only those top tickers to perform sentiment analysis
+* Scrape data to get top stock tickers from Sept 1, 2022 to Sept 30, 2022
+* Scrape data for only those top tickers to perform sentiment analysis
 ### Stock Simulator - Retrospect
-	Scraped Yahoo finance for actual monthly closing prices 
+* Scraped Yahoo finance for actual monthly closing prices 
 
 # Approach
 
 ![image](images/roadmap.png)
 
 ### For Topic Modelling
-	Remove comments with less than 10 words to ensure only opinions are well-explained
-	Only keep content with more than 5 upvotes to weed out irrelevant content
-	Remove outlier topics (taken care by BERT)
+* Remove comments with less than 10 words to ensure only opinions are well-explained
+* Only keep content with more than 5 upvotes to weed out irrelevant content
+* Remove outlier topics (taken care by BERT)
 ### For Sentiment Analysis
-	Modify VADER's sentiment score on lexicons we got from topic modelling
-	+2 for positive sentiment & -10 for negative sentiment
+* Modify VADER's sentiment score on lexicons we got from topic modelling
+* +2 for positive sentiment & -10 for negative sentiment
 ### Stock Simulator - Retrospect
-	Perform sentiment analysis on top 10 tickers in windows of 90, 60 and 30 days, and 
-	Get actual data from yahoo finance for the same top 10 tickers to compare our recommendations
+* Perform sentiment analysis on top 10 tickers in windows of 90, 60 and 30 days, and 
+* Get actual data from yahoo finance for the same top 10 tickers to compare our recommendations
 
 # Novel insight
 
